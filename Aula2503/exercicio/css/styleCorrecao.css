@@ -1,0 +1,72 @@
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--color-grey-900);
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    min-height: 500px;
+    background-color: var(--color-grey-800);
+    color: var(--color-white);
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 100%;
+}
+ 
+.card h2 {
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
+    margin: 20px 0 10px ;
+    font-weight: 400;
+}
+
+.card h4 {
+    color: var(--color-green);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* elemento inline */
+.card a {
+    width: 350px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: var(--color-grey-700);
+    color: var(--color-white);
+    display: inline-block;
+    margin: 10px auto;
+    text-decoration: none;
+    align-content: center; /* só em elementos de bloco, alinhamento vertical */
+    transition: .5s;
+}
+
+.card a:hover{
+    background-color: var(--color-green);
+    color: var(--color-grey-900);
+}

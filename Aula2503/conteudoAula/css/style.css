@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    /* max-width: 400px; */
+    margin: auto; 
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #999;
+    text-align: left;
+
+    /* & p {
+        font-size: 20px; EXEMPLO DE NESTING 
+    } */
+}
+
+/* .container p{
+    font-size: 20px; TODOS OS 'p' DENTRO DE CONTAINER
+} */
+
+.container-title {
+    font-size: 30px;
+}
+
+.container-text {
+    font-size: 20px;
+}
+
+.container-bg-red {
+    background-color: red;
+}
+
+.container-bg-blue {
+    background-color: blue;
+}
