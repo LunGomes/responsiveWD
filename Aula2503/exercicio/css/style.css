@@ -1,28 +1,39 @@
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 body{
-    background-color: hsl(0, 0%, 8%);
+    background-color: var(--color-grey-900);
 }
 
 .container {
     width: 100%;
     max-width: 400px;
-    margin: auto; 
+    min-height: 500px;
+    margin: 60px auto; 
     padding: 20px;
     border-radius: 20px;
-    min-height: 90vh;
-    background-color: hsl(0, 0%, 12%);
+    background-color: var(--color-grey-800);
 
     align-content: center;
     text-align: center;
-    color: hsl(0, 0%, 100%);
+    color: var(--color-white);
 }
 
 .icon {
+    width: 150px;
     border-radius: 100%;
 }
 
@@ -30,22 +41,33 @@ body{
     margin: 20px;
 }
 
+.container h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
 .user-location {
-    color: hsl(75, 94%, 57%);
+    color: var(--color-green);
 }   
 
-.text{
-    font-weight: bold   ;
+.bio{
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.container_buttons {
-    margin-top: 20px;
-}
-
-.buttons {
-    margin-bottom: 16px;
+.container a {
+    color: var(--color-white);
+    text-decoration: none;
+    margin-bottom: 20px ;
     padding: 10px;
     width: 350px;
+    display: inline-block;
     border-radius: 6px;
-    background-color: hsl(0, 0%, 20%);
+    background-color: var(--color-grey-700);
+    transition: .5s;
+}
+
+.container a:hover {
+    background-color: var(--color-green);
+    color: var(--color-grey-700);
 }
