@@ -1,0 +1,95 @@
+:root {
+    --color-bg: #DDE0E1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+img { 
+    width: 90px;
+    height: 90px;
+}
+
+.container {
+    background-color: var(--color-bg);
+    width: 90%;
+    min-height: 120px;
+    margin: 45px auto;
+    padding: 0 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Exercício 1 */
+.flex1 {
+    justify-content: center;
+}
+
+/* Exercício 2 */
+.flex2 {
+    justify-content: center;
+}
+
+/* Exercício 3 */
+.flex3 {
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+/* Exercício 4 */
+.flex4 {
+    justify-content: flex-start;
+}
+
+/* Exercício 5 */
+.flex5 {
+    justify-content: space-between;
+}
+
+/* Exercício 6 é igual ao flex2 --> reutilizar */
+
+/* Exercício 7 */
+.flex7 {
+    justify-content: space-between;
+    gap: 30px;      
+
+    .flex-item{
+        display: flex;        
+        gap: 30px;
+    }
+}
+
+/* Exercício 8 */
+.flex8 {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+
+    .flex-item{ 
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    
+    .img-border {
+        border-radius: 10px;
+    }
+}
+
+/* Exercício 9 */
+.flex9 {
+    justify-content: center;
+
+    .card {
+        width: 250px;
+    }
+    
+    .img-border-icon {
+        border-radius: 100%;
+    }
+}

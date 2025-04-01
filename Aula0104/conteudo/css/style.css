@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Inter; /* qualquer nome para a fonte */
+    src: url(../fonts/Inter_24pt-Light.ttf);
+}
+
+:root {
+    --color-600: #666;
+    --color-300: #ccc;
+    --size-100: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+.container {
+    background-color: var(--color-600);
+    width: 80%;
+    height: 500px;
+    margin: 10px auto;
+    display: flex;
+    /* O flex ignora a largura dos filhos para alinha-los
+    flex-direction: row; tem variáveis*/
+    justify-content: center;
+    align-items: center;
+    /* justify-content --> row = horizontal / column = vertical */
+    /* align-items --> row = vertical / column = horizontal */
+    gap: 30px;
+}
+
+.box {
+    background-color: var(--color-300);
+    width: var(--size-100);
+    height: var(--size-100);
+    color: var(--color-600);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 100%; */
+}
+
+.border-10{border-radius: 10px;}
+.border-20{border-radius: 20px;}
+.border-30{border-radius: 30px;}
+.border-40{border-radius: 40px;}
