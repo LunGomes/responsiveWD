@@ -1,95 +1,134 @@
 :root {
-    --color-bg: #DDE0E1;
+  --color-bg: #dde0e1;
+  --color-linkedin: #103749;
+  --color-instagram: #3f729b;
+  --color-twitch: #6441a5;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: calibri;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: calibri;
 }
 
-img { 
-    width: 90px;
-    height: 90px;
+img {
+  width: 90px;
+  height: 90px;
 }
 
 .container {
-    background-color: var(--color-bg);
-    width: 90%;
-    min-height: 120px;
-    margin: 45px auto;
-    padding: 0 30px;
-    display: flex;
-    gap: 30px;
-    align-items: center;
+  background-color: var(--color-bg);
+  width: 90%;
+  min-height: 120px;
+  margin: 45px auto;
+  padding: 0 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
 /* Exercício 1 */
 .flex1 {
-    justify-content: center;
+  justify-content: center;
 }
 
 /* Exercício 2 */
 .flex2 {
-    justify-content: center;
+  justify-content: center;
 }
 
 /* Exercício 3 */
 .flex3 {
-    justify-content: flex-end;
-    gap: 30px;
+  justify-content: flex-end;
+  gap: 30px;
 }
 
 /* Exercício 4 */
 .flex4 {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 /* Exercício 5 */
 .flex5 {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 /* Exercício 6 é igual ao flex2 --> reutilizar */
 
 /* Exercício 7 */
 .flex7 {
-    justify-content: space-between;
-    gap: 30px;      
+  justify-content: space-between;
+  gap: 30px;
 
-    .flex-item{
-        display: flex;        
-        gap: 30px;
-    }
+  .flex-item {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 /* Exercício 8 */
 .flex8 {
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
 
-    .flex-item{ 
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-    }
-    
-    .img-border {
-        border-radius: 10px;
-    }
+  .flex-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .img-border {
+    border-radius: 10px;
+  }
 }
 
 /* Exercício 9 */
 .flex9 {
-    justify-content: center;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
-    .card {
-        width: 250px;
-    }
-    
-    .img-border-icon {
-        border-radius: 100%;
-    }
+.flex9 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.flex9 div img {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+}
+
+.flex9 div .social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  font-size: 25px;
+}
+
+.fa-linkedin,
+.fa-instagram,
+.fa-twitch {
+  color: #333;
+  transition: color 0.7s;
+}
+
+.fa-linkedin:hover {
+  color: var(--color-linkedin);
+}
+
+.fa-instagram:hover {
+  color: var(--color-instagram);
+}
+
+.fa-twitch:hover {
+  color: var(--color-twitch);
 }
