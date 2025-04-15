@@ -1,0 +1,119 @@
+:root {
+    --font-body: "Poppins", sans-serif;
+    --color-light: #f4f4f4;
+    --color-grey: #333333;
+    --color-pink: #db2a4e;
+    --color-blue: #0c0727;
+    --l-gradient: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .3))
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+ul, ol {
+    list-style: none;
+    color: var(--color-grey);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light);
+    transition: .7s;
+}
+
+a:hover {
+    color: var(--color-pink);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/******************* Hero da página *******************/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: var(--l-gradient),
+    url(../images/pexels-felix-mittermeier-957002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* ou 50% */
+}
+
+.header-hero {
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-hero h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--color-light);
+}
+
+.span-pink {
+    background-color: var(--color-pink);
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.content-hero {
+    width: 100%;
+    height: calc(100vh - 100px);
+    color: var(--color-light);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    & h1 {
+        font-size: 7vmin;
+        font-weight: 300;
+    }
+
+    & h3 {
+        font-size: 5vmin;
+        font-weight: 300;
+    }
+}
+
+/******************* fim Hero da página *******************/
+
+.btn {
+    background-color: var(--color-pink);
+    padding: 7px 30px;
+    border-radius: 70px;
+    border: 2px solid var(--color-pink);
+
+    &:hover {
+        background-color: transparent;
+        color: var(--color-light);
+        /* border-color: var(--color-light); */
+    }
+}
+
+.container {
+    min-height: 100vh;
+}
