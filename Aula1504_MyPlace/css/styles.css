@@ -1,0 +1,201 @@
+:root {
+  --font-body: "Poppins", sans-serif;
+  --color-light: #f4f4f4;
+  --color-grey: #333333;
+  --color-pink: #db2a4e;
+  --color-blue: #0c0727;
+  --l-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  --spacing-30: 3rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  font-size: 1.6rem; /* 16px --> Quem não tem o font-size declarado se baseia nele*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+}
+
+ul,
+ol {
+  list-style: none;
+  color: var(--color-grey);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-light);
+  transition: 0.7s;
+}
+
+a:hover {
+  color: var(--color-pink);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Classes mais usadas */
+
+.btn {
+  background-color: var(--color-pink);
+  padding: 7px var(--spacing-30);
+  border-radius: 7rem;
+  border: 2px solid var(--color-pink);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--color-light);
+    /* border-color: var(--color-light); */
+  }
+}
+
+.fa-arrow-down {
+  margin-left: 5px;
+}
+
+.btn-up {
+  position: fixed;
+  z-index: 1;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1.2rem;
+  border: 1px solid var(--color-grey);
+  border-radius: 1rem;
+  padding: 0.8rem;
+  text-align: center;
+  line-height: 120%;
+
+  &:hover {
+    animation: btn-up 1s infinite;
+  }
+
+  & a {
+    color: var(--color-grey);
+  }
+}
+
+/******************* Hero da página *******************/
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: var(--l-gradient),
+    url(../images/pexels-felix-mittermeier-957002.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; /* ou 50% */
+}
+
+.header-hero {
+  width: 100%;
+  height: 10rem;
+  padding: 0 var(--spacing-30);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-hero h2 {
+  font-size: var(--spacing-30);
+  font-weight: 300;
+  color: var(--color-light);
+}
+
+.span-pink {
+  background-color: var(--color-pink);
+  padding: 1px 3px; /* Medidas menores que 10 não é tão necessário serem convertidas */
+  border-radius: 5px; /* Mas depende do projeto */
+}
+
+.nav-menu {
+  display: flex;
+  gap: var(--spacing-30);
+}
+
+.content-hero {
+  width: 100%;
+  height: calc(100vh - 10rem);
+  color: var(--color-light);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-30);
+
+  & h1 {
+    font-size: 7vmin;
+    font-weight: 300;
+  }
+
+  & h3 {
+    font-size: 5vmin;
+    font-weight: 300;
+  }
+}
+
+/******************* fim Hero da página *******************/
+
+/******************* Cards *******************/
+
+.container {
+  min-height: 100vh;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+  padding: var(--spacing-30) 0;
+}
+
+.container-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.grid-cards {
+  margin: var(--spacing-30);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.grid-cards div {
+  width: 37%;
+  margin: var(--spacing-30) 0;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-30);
+  box-shadow: 1px 1px 3rem #aaa;
+  border-radius: 0.7rem;
+  transition: scale 0.5s;
+}
+
+.grid-cards div:hover {
+  scale: 1.1;
+}
+
+.grid-cards img {
+  border-radius: 0.7rem;
+  width: 80%;
+}
+
+.grid-cards p {
+  width: 80%;
+  text-wrap: balance;
+}
+
+/******************* Fim Cards *******************/
