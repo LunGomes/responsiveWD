@@ -1,0 +1,29 @@
+/* Pensando no responsivo  */
+
+@media(max-width: 1024px){ 
+.container {
+    background-color: aqua;
+  }
+}
+
+@media(max-width: 600px) {
+  .container{
+    background-color: var(--color-pink);
+    color: aqua;
+  }
+}
+
+// Modelo mais recente
+
+@media(width <= 1024px){
+  .container {
+      background-color: aqua;
+    }
+  }
+  
+  @media(width <= 600px) {
+    .container{
+      background-color: var(--color-pink);
+      color: aqua;
+    }
+  }

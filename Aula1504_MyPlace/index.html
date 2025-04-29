@@ -1,127 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyPlace</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/animations.css">
-</head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- ***************** Hero ***************** -->
     <section class="hero" id="home">
-        <header class="header-hero">
-            <h2><span class="span-pink">My</span>Place</h2>
-            <nav class="nav-bar">
-                <ul class="nav-menu">
-                    <li><a href="#tours">Tours</a></li>
-                    <li><a href="#explore">Explore</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
+      <header class="header-hero">
+        <h2><span class="span-pink">My</span>Place</h2>
+        <nav class="nav-bar">
+          <ul class="nav-menu">
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
 
-        <div class="content-hero">
-            <h1>O MyPlace é exatamente assim...</h1>
-            <h3>Simplesmente maravilhoso</h3>
-            <a class="btn" href="">Mais informações <i class="fa-solid fa-arrow-down"></i></a>
-        </div>
+      <div class="content-hero">
+        <h1>O MyPlace é exatamente assim...</h1>
+        <h3>Simplesmente maravilhoso</h3>
+        <a class="btn" href=""
+          >Mais informações <i class="fa-solid fa-arrow-down"></i
+        ></a>
+      </div>
     </section>
     <!-- ***************** Fim Hero ***************** -->
 
     <!-- ***************** Tours ***************** -->
     <article class="container" id="tours">
+      <h3 class="container-title">Faça um tour pelas montanhas</h3>
 
-        <h3 class="container-title">Faça um tour pelas montanhas</h3>
+      <section class="grid-cards">
+        <!-- 1o. card -->
+        <div>
+          <img
+            src="./images/pexels-eberhard-grossgasteiger-572897.jpg"
+            alt="Tour pela Montanha"
+            loading="lazy"
+          />
+          <h4>Lorem Ipsum Dolor</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+            labore fuga iusto!
+          </p>
+          <a href="" class="btn">Veja mais</a>
+        </div>
+        <!-- Fim 1o. card -->
 
-        <section class="grid-cards">
+        <!-- 2o. card -->
+        <div>
+          <img
+            src="./images/pexels-francesco-ungaro-2835436.jpg"
+            alt="Tour pela Montanha"
+            loading="lazy"
+          />
+          <h4>Lorem Ipsum Dolor</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+            labore fuga iusto!
+          </p>
+          <a href="" class="btn">Veja mais</a>
+        </div>
+        <!-- Fim 2o. card -->
 
-            <!-- 1o. card -->
-            <div>
-                <img src="./images/pexels-eberhard-grossgasteiger-572897.jpg" alt="Tour pela Montanha" loading="lazy"> 
-                <h4>Lorem Ipsum Dolor</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi labore fuga iusto!</p>
-                <a href="" class="btn">Veja mais</a>
-            </div>
-            <!-- Fim 1o. card -->
+        <!-- 3o. card -->
+        <div>
+          <img
+            src="./images/pexels-jonathan-petersson-399176.jpg"
+            alt="Tour pela Montanha"
+            loading="lazy"
+          />
+          <h4>Lorem Ipsum Dolor</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+            labore fuga iusto!
+          </p>
+          <a href="" class="btn">Veja mais</a>
+        </div>
+        <!-- Fim 3o. card -->
 
-            <!-- 2o. card -->
-            <div>
-                <img src="./images/pexels-francesco-ungaro-2835436.jpg" alt="Tour pela Montanha" loading="lazy">
-                <h4>Lorem Ipsum Dolor</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi labore fuga iusto!</p>
-                <a href="" class="btn">Veja mais</a>
-            </div>
-            <!-- Fim 2o. card -->
+        <!-- 4o. card -->
+        <div>
+          <img
+            src="./images/pexels-julia-volk-5769320.jpg"
+            alt="Tour pela Montanha"
+            loading="lazy"
+          />
+          <h4>Lorem Ipsum Dolor</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+            labore fuga iusto!
+          </p>
+          <a href="" class="btn">Veja mais</a>
+        </div>
+        <!-- Fim 4o. card -->
 
-            <!-- 3o. card -->
-            <div>
-                <img src="./images/pexels-jonathan-petersson-399176.jpg" alt="Tour pela Montanha" loading="lazy">
-                <h4>Lorem Ipsum Dolor</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi labore fuga iusto!</p>
-                <a href="" class="btn">Veja mais</a>
-            </div>
-            <!-- Fim 3o. card -->
+        <!-- 5o. card -->
+        <div>
+          <img
+            src="./images/pexels-kleber-m-ortiz-4028995.jpg
+                "
+            alt="Tour pela Montanha"
+            loading="lazy"
+          />
+          <h4>Lorem Ipsum Dolor</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+            labore fuga iusto!
+          </p>
+          <a href="" class="btn">Veja mais</a>
+        </div>
+        <!-- Fim 5o. card -->
 
-            <!-- 4o. card -->
-            <div>
-                <img src="./images/pexels-julia-volk-5769320.jpg" alt="Tour pela Montanha" loading="lazy">
-                <h4>Lorem Ipsum Dolor</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi labore fuga iusto!</p>
-                <a href="" class="btn">Veja mais</a>
-            </div>
-            <!-- Fim 4o. card -->
-
-            <!-- 5o. card -->
-            <div>
-                <img src="./images/pexels-kleber-m-ortiz-4028995.jpg
-                " alt="Tour pela Montanha" loading="lazy">
-                <h4>Lorem Ipsum Dolor</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi labore fuga iusto!</p>
-                <a href="" class="btn">Veja mais</a>
-            </div>
-            <!-- Fim 5o. card -->
-
-            <!-- 6o. card -->
-            <div>
-                <img src="./images/pexels-riciardus-789380.jpg" alt="Tour pela Montanha" loading="lazy">
-                <h4>Lorem Ipsum Dolor</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi labore fuga iusto!</p>
-                <a href="" class="btn">Veja mais</a>
-            </div>
-            <!-- Fim 6o. card -->
-
-        </section>
-
+        <!-- 6o. card -->
+        <div>
+          <img
+            src="./images/pexels-riciardus-789380.jpg"
+            alt="Tour pela Montanha"
+            loading="lazy"
+          />
+          <h4>Lorem Ipsum Dolor</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+            labore fuga iusto!
+          </p>
+          <a href="" class="btn">Veja mais</a>
+        </div>
+        <!-- Fim 6o. card -->
+      </section>
     </article>
     <!-- ***************** Fim Tours ***************** -->
 
-    <section class="container" id="explore">Explore</section>
+    <!-- ***************** Explore ***************** -->
+
+    <section class="container" id="explore">
+
+        <h3 class="container-title">Explore</h3>
+        <figure class="explore-images">
+            <img src="./images/explore/pexels-chris-czermak-1280625-2444429.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-eberhardgross-1021808.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-eberhardgross-1183021.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-eberhardgross-1366919.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-felixmittermeier-2832061.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-francesco-ungaro-2915997.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-kinkate-368260.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-luis-ruiz-991422.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-m-venter-792254-1659438 (1).jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-pixabay-355747.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-chris-czermak-1280625-2444429.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-eberhardgross-1021808.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-eberhardgross-1183021.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-eberhardgross-1366919.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-felixmittermeier-2832061.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-francesco-ungaro-2915997.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-kinkate-368260.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-luis-ruiz-991422.jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-m-venter-792254-1659438 (1).jpg" alt="Imagem XPTO" loading="lazy">
+            <img src="./images/explore/pexels-pixabay-355747.jpg" alt="Imagem XPTO" loading="lazy">
+        </figure>
+    </section>
+
+    <!-- ***************** Fim Explore ***************** -->
+
+    
     <section class="container" id="sobre">Sobre</section>
     <section class="container" id="contato">Contato</section>
 
     <!-- Botão para o topo -->
-    <div class="btn-up">
-        <a href="#home">
-            <i class="fa-solid fa-arrow-up" id="btn-up"></i>
-            <p>Home</p>
-        </a>
+    <div class="btn-up" id="btnUp">
+      <a href="#home">
+        <i class="fa-solid fa-arrow-up" id="btn-up"></i>
+        <p>Home</p>
+      </a>
     </div>
-</body>
+  </body>
 
+  <!-- Chamada dos JS -->
+  <script src="./js/scroll.js"></script>
 </html>

@@ -42,7 +42,7 @@ a:hover {
 
 img {
   max-width: 100%;
-  display: block;
+  /* display: block; */
 }
 
 /* Classes mais usadas */
@@ -74,7 +74,8 @@ img {
   border-radius: 1rem;
   padding: 0.8rem;
   text-align: center;
-  line-height: 120%;
+  line-height: 100%;
+  display: none;
 
   &:hover {
     animation: btn-up 1s infinite;
@@ -85,11 +86,15 @@ img {
   }
 }
 
+.btn-up-show{
+  display: block;
+}
+
 /******************* Hero da página *******************/
 
 .hero {
   width: 100%;
-  height: 100vh;
+  min-height: 100dvh;
   background-image: var(--l-gradient),
     url(../images/pexels-felix-mittermeier-957002.jpg);
   background-repeat: no-repeat;
@@ -99,7 +104,7 @@ img {
 
 .header-hero {
   width: 100%;
-  height: 10rem;
+  min-height: 10rem;
   padding: 0 var(--spacing-30);
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +113,7 @@ img {
 }
 
 .header-hero h2 {
-  font-size: var(--spacing-30);
+  font-size: 2rem var(--spacing-30);
   font-weight: 300;
   color: var(--color-light);
 }
@@ -126,7 +131,7 @@ img {
 
 .content-hero {
   width: 100%;
-  height: calc(100vh - 10rem);
+  height: calc(100dvh - 10rem);
   color: var(--color-light);
   text-align: center;
   display: flex;
@@ -151,7 +156,7 @@ img {
 /******************* Cards *******************/
 
 .container {
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 90%;
   margin: 2rem auto;
   text-align: center;
@@ -199,3 +204,43 @@ img {
 }
 
 /******************* Fim Cards *******************/
+
+
+/******************* Explore *******************/
+
+.explore-images {
+  width: 90%;
+  margin: 3rem auto;
+  padding: 1rem;
+  columns: 300px;
+  /* border: 1px solid var(--color-grey); */
+
+  & img{
+    border-radius: 15px;
+    transition: .5s;
+
+    &:hover {
+      scale: 0.9;
+    }
+  }
+}
+
+/******************* Fim Explore *******************/
+
+
+/* Responsivo */
+
+@media(width <= 640px) {
+  .header-hero {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+}
+
+@media(width <= 920px) {
+  .grid-cards div {
+    width: 90%;
+  }
+}
