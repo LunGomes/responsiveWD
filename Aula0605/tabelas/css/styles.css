@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+
+
+table {
+    width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 2rem;
+    color: #fff;
+    background-color: #336699;
+    padding: .5rem 0;
+    margin-bottom: .8rem;
+    /* border-bottom: 1px solid #336699; */
+}
+
+tr th, tr td {
+    padding: 1rem;
+    border-bottom: 1px solid #336699;
+    width: 25%;
+}
+
+tr th {
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+tr td {
+    font-size: 1.2rem;
+}
+
+tbody tr:hover{
+    background-color: #ccc;
+}

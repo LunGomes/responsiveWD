@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h2>Formulários</h2>
+
+    <form id="dados" name="dados" method="dados" action="">
+        <!-- <fieldset>
+            <legend>
+                Dados Pessoais
+            </legend>
+        </fieldset> -->
+
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome"  name="nome" placeholder="Ex: Fulano de tal"
+            minlength="10" maxlength="20" required>
+        </div>
+
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" 
+            placeholder="Ex: !@#65$75" minlength="8" maxlength="20" required>
+        </div>
+
+        <div>
+            <label for="formacao">Formação</label>
+            <select name="formacao" id="formacao" required>
+                <option value="0" disabled selected>Selecione sua formação</option>
+                <option value="1">Ensino médio</option>
+                <option value="2">Ensino Superior</option>
+                <option value="3">Pós-graduação</option>
+                <option value="4">Mestrado</option>
+                <option value="5">Doutorado</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="">Área de atuação</label>
+
+            <input type="radio" name="atuacao" id="atuacao1" value="Front-end">
+            <label for="atuacao1">Front-end</label>
+
+            <input type="radio" name="atuacao" id="atuacao2" value="Back-end">
+            <label for="atuacao2">Back-end</label>
+
+            <input type="radio" name="atuacao" id="atuacao3" value="Banco">
+            <label for="atuacao3">Banco</label>
+
+            <input type="radio" name="atuacao" id="atuacao4" value="DevOps">
+            <label for="atuacao4">DevOps</label>
+        </div>
+
+        <div>
+            <label for="">Preferências</label>
+
+            <input type="checkbox" name="preferencias" id="preferencias1" value="Front-end">
+            <label for="preferencias1">Front-end</label>
+
+            <input type="checkbox" name="preferencias" id="preferencias2" value="Back-end">
+            <label for="preferencias2">Back-end</label>
+
+            <input type="checkbox" name="preferencias" id="preferencias3" value="Banco">
+            <label for="preferencias3">Banco</label>
+            
+            <input type="checkbox" name="preferencias" id="preferencias4" value="DevOps">
+            <label for="preferencias4">DevOps</label>
+        </div>
+
+        <button id="btn">Enviar</button>
+    </form>
+</body>
+</html>
