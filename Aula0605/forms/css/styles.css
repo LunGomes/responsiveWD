@@ -1,0 +1,14 @@
+* {
+    font-family: calibri;
+}
+
+h2, div, button {
+    margin: 1rem;
+}
+
+textarea {
+    display: block;
+    width: 25%;
+    height: 100px;
+    resize: none;
+}
