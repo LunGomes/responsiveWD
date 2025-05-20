@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+
+    background-image: linear-gradient(110deg,
+            hsl(240deg 92% 30%) 0%,
+            hsl(236deg 100% 28%) 0%,
+            hsl(235deg 100% 27%) -1%,
+            hsl(233deg 100% 26%) -1%,
+            hsl(232deg 100% 25%) -1%,
+            hsl(231deg 100% 24%) -1%,
+            hsl(231deg 100% 23%) -2%,
+            hsl(230deg 100% 22%) -2%,
+            hsl(229deg 100% 22%) -2%,
+            hsl(228deg 100% 21%) -1%,
+            hsl(228deg 100% 20%) -1%,
+            hsl(227deg 100% 19%) -1%,
+            hsl(226deg 100% 18%) 0%,
+            hsl(225deg 100% 17%) 1%,
+            hsl(225deg 100% 16%) 3%,
+            hsl(224deg 100% 15%) 5%,
+            hsl(223deg 98% 14%) 7%,
+            hsl(224deg 92% 14%) 11%,
+            hsl(225deg 85% 13%) 16%,
+            hsl(226deg 78% 13%) 23%,
+            hsl(228deg 70% 12%) 35%,
+            hsl(230deg 62% 11%) 65%);
+}
+
+.container {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.items {
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.items::-webkit-scrollbar {
+    height: 10px;
+    background-color: #171B36;
+    border-radius: 5px;
+}
+
+.items::-webkit-scrollbar-thumb {
+    background-color: #b42ad6;
+    border-radius: 5px;
+}
+
+.items img {
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+@media(width <= 700px){
+    .items img {
+        width: 75%;
+    }
+}

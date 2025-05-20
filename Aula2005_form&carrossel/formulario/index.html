@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>  
+    <main class="container">
+        <section class="left-section">
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam at veniam distinctio, consequuntur voluptates pariatur labore nobis repellat?</p>
+        </section>
+
+        <section class="right-section">
+            <header class="header">
+                <h3>Preencha o formulário abaixo</h3>
+            </header>
+
+            <form class="signup-form" id="form-dados" name="form-dados" method="get" action="">
+                <div class="form-group">
+                    <input type="text" name="firstName" id="firstName" 
+                    placeholder="Nome" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="lastName" id="lastName" 
+                    placeholder="Sobrenome" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" id="email" 
+                    placeholder="E-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" name="password" id="password" 
+                    placeholder="Senha" required>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Quero criar minha conta <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+                <p class="terms">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing.</a>
+                </p>
+            </form>
+        </section>
+    </main>
+</body> 
+</html>
