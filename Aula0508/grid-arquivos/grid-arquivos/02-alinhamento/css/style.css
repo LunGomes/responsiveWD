@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink-color: #dc1432;
+    --light-color: #ffffff;
+    --first-color: #444054;
+    --second-color: #2f243a;
+    --third-color: #2a2464;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2.5rem;
+    font-family: calibri;
+    color: var(--light-color);
+}
+
+h2 {
+    color: var(--pink-color);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.container {
+    margin: 10px auto;
+    min-height: 300px;
+    width: 80%;
+    border: 1px solid #000;
+    display:grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2,70px);
+    row-gap: 2rem;
+    column-gap: 3rem;
+    gap: 2rem;
+
+    /* alinhamento horizontal
+    HORIZONTAL SEMPRE COM JUSTIFY*/
+    justify-content: start;
+    justify-content: end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: center;
+
+    /* alinhamento vertical - EIXO Y
+    VERTICAL SEMPRE COM ALIGN*/
+
+    align-content: start;
+    align-content: end;
+    align-content: center;
+
+    /* alinhamento conteúdo - horizontal justify */
+
+    justify-items: start;
+    justify-items: end;
+    justify-items: center;
+
+    /* alinhamento conteúdo - vertical - align */
+    align-items: start;
+    align-items: end;
+    align-items: stretch;
+    align-items: center;
+
+    /* colocar algum conteúdo em uma posição diferente do padrão aplicado */
+
+    .out{
+        justify-self: start;
+        align-self: end;
+    }
+
+
+}
+
+
+.box1 {
+    background-color: var(--first-color);
+    border: 1px solid var(--light-color);
+}
+
+.box2 {
+    background-color: var(--second-color);
+    border: 1px solid var(--light-color);
+}
+
+.box3 {
+    background-color: var(--third-color);
+    border: 1px solid var(--light-color);
+}
