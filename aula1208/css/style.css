@@ -1,0 +1,21 @@
+:root {
+    --color-fiap: #dc143c;
+    --color-light-100: #f4f4f4;
+    --color-dark-800: #333333;
+    --color-dark-600: #666666;
+}
+
+.text-fiap { color: var(--color-fiap); }
+.bg-fiap { background-color: var(--color-fiap); }
+
+.text-light-100 { color: var(--color-light-100);  }
+.bg-light-100 { background-color: var(--color-light-100); }
+
+.text-dark-800 { color: var(--color-dark-800); }
+.bg-dark-800 { background-color: var(--color-dark-800); }
+
+.btn-hover:hover {
+    background-color: var(--color-dark-600);
+    color: var(--color-light-100);
+    transition: .2s;
+}
