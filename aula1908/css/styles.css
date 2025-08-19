@@ -1,0 +1,7 @@
+.hero {
+    min-height: 100vh;
+}
+
+nav .container .navbar-brand .navbar-toggle {
+    box-shadow: none !important;
+}
