@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Objetos com Javascript</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <div class="container my-5">
+    <h1 class="display-5 py-5 px-3 bg-danger text-light rounded">Produtos em estoque</h1>
+
+    <div class="row">
+      <!-- campo de busca -->
+      <div class="col-md-8 my-3 d-flex align-items-center">
+        <input type="text" id="txtBuscar" name="" class="form-control" placeholder="Digite o produto desejado">
+        <button class="btn btn-danger ms-2" id="btnBuscar">Buscar</button>
+      </div>
+
+      <!-- campo de filtro -->
+      <div class="col-md-4 my-3">
+        <select name="filtroCategoria" id="filtroCategoria" class="form-select">
+          <option value="todos">Todos</option>
+        </select>
+      </div>
+
+      <!-- grid de Produtos - JS -->
+      <main class="my-3 p-3 row" id="gridProdutos"></main>
+
+
+    </div>
+  </div>
+
+  <script type="module" src="./js/montarFront.js"></script>
+  <script type="module" src="./js/desestruturacao.js"></script>
+</body>
+
+</html>
