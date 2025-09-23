@@ -21,6 +21,14 @@
     --animate-rodando: rodando 1s ease-in-out;
 }
 
+.thead-col {
+    @apply min-w-[120px] text-white text-lg font-semibold text-center px-4 py-3 hover:text-sky-800;
+}
+
+.padding-tr {
+    @apply px-4 py-3;
+}
+
 @keyframes title {
     0% {
         transform: translateX(-1000px);
